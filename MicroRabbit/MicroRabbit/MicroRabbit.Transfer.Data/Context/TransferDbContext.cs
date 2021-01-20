@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicroRabbit.Banking.Data.Context
+namespace MicroRabbit.Transfer.Data.Context
 {
     public class TransferDbContext : DbContext
     {
@@ -13,6 +13,6 @@ namespace MicroRabbit.Banking.Data.Context
 
         }
 
-        public DbSet<TransferLog> Accounts { get; set; }
+        public DbSet<TransferLog> TransferLogs { get; set; }
     }
 }
